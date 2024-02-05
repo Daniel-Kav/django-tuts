@@ -5,4 +5,4 @@ from django.http import HttpResponse
 # request -> response
 # request handler
 def say_hello(request):
-    return render(request, 'base.html')
+    return render(request, 'base.html', {'name':'request'})
