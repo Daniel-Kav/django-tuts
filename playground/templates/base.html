@@ -1,6 +1,29 @@
-{% if name%}
-<h1>hello {{name}}</h1>
-
-{% else %}
-<h1> Hello {{ title }}</h1>
-{% endif%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if name%}
+    
+    <h1>hello {{name}}</h1>
+    <iframe id="sofa-standings-embed-54-52587"
+        src="https://widgets.sofascore.com/embed/tournament/54/season/52588/standings/Premiership%2023%2F24?widgetTitle=Premiership 23/24&showCompetitionLogo=true&v=2"
+        style=height:775px!important;max-width:768px!important;width:100%!important; frameborder="0"
+        scrolling="no"></iframe>
+    
+    </div>
+    <iframe width="100%" height="194"
+        src="https://widgets.sofascore.com/embed/attackMomentum?id=11406872&widgetBackground=Gray&v=2" frameborder="0"
+        scrolling="no"></iframe>
+    <div style="font-size:12px;font-family:Arial,sans-serif"><a
+            href="https://www.sofascore.com/cagliari-roma/cebsueb#11406872" target="_blank" rel="noreferrer">
+            Roma - Cagliari Live Score
+        </a></div>
+    {% else %}
+    <h1> Hello {{ title }}</h1>
+    {% endif%}
+</body>
+</html>
