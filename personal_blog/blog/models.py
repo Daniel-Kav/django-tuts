@@ -27,4 +27,4 @@ class Comment(models.Model):
     post = models.ForeignKey("Post", on_delete= models.CASCADE)
 
     def __str__(self) -> str:
-        return f"{self.author} on '{self.post}"
+        return f"{self.author} on '{self.post}'"
