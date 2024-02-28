@@ -28,11 +28,12 @@
     </form>
     <h3>Comments:</h3>
     {% for comment in comments %}
-    <p>
-        On {{ comment.created_on.date }} <b>{{ comment.author }}</b> wrote:
-    </p>
-    <p>
-        {{ comment.body | linebreaks }}
-    </p>
+        <p>
+            On {{ comment.created_on.date }} <b>{{ comment.author }}</b> wrote:
+        </p>
+        <p>
+            {{ comment.body | linebreaks }}
+        </p>
+    {% endfor %}
 
 {% endblock page_content %}
